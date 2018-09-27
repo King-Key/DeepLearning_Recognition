@@ -23,7 +23,7 @@ class VideoBox(QWidget):
     STATUS_PLAYING = 1
     STATUS_PAUSE = 2
 
-    video_url = "陈氏十六式.mp4"
+    video_url = "data/陈氏十六式.mp4"
 
     def __init__(self, video_url="", video_type=VIDEO_TYPE_OFFLINE, auto_play=False):
         QWidget.__init__(self)
@@ -34,7 +34,7 @@ class VideoBox(QWidget):
 
         # 组件展示
         self.pictureLabel = QLabel()
-        init_image = QPixmap("/home/guo/Pictures/Aurora.jpg").scaled(self.width(), self.height())
+        init_image = QPixmap("data/Aurora.jpg").scaled(self.width(), self.height())
         self.pictureLabel.setPixmap(init_image)
 
         self.playButton = QPushButton()
