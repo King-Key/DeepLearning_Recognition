@@ -158,7 +158,7 @@ class VideoTimer(QThread):
 
 if __name__ == "__main__":
    app = QApplication(sys.argv)
-   box = VideoBox("")
+   box = VideoBox("data/陈氏十六式.mp4")
    box.show()
    sys.exit(app.exec_())
 
